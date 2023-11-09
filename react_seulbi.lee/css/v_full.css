@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
+* {box-sizing: border-box;}
+a { outline:0; text-decoration:none; color:#555;font-family: 'Gothic A1', sans-serif; }
+body { font:12px/1.6 arial; color:#555; } 
+
+header h1 { text-align: center;margin:0 auto;height:70px;line-height: 70px;}
+header h1 a { color:#121212; font-size:17px; font-weight: 600;}
+
+#menu {height: 30px; line-height: 30px;
+       background: #131313;text-align: center; text-align: center;}
+#menu ul {width:60%; margin:0 auto;display: flex;}
+#menu ul li {width:25%;padding-right:3px; }
+#menu ul li a {text-decoration: none; color:#fff;font-size:0.7rem; font-weight:500;}      
+.submenu {width:100%;background: #131313;display: none;
+          z-index:9999;position: absolute;left:0;top:100px;}
+.box {width:60%;margin:0 auto;display: flex;text-align: center;padding-bottom: 10px;}
+.box ul {width:30%;}
+.box ul a {color:#fff; padding-top: 20px; font-size: 0.5rem;}
+
+#main,#main1, #main2 {width:80%; margin:2rem auto;}
+#main ul,#main1 ul,#main2 ul{display:flex; }
+#main ul li,#main1 ul li,#main2 ul li {width:40%;padding-right:3px;}
+#main ul li img,#main1 ul li img,#main2 ul li img {width:100%;}
+#main h2,#main1 h2,#main2 h2 {margin-top: 150px; font-weight: 500; font-size: 0.8rem;}
+
+#banner, #ban1 {width:100%;}
+#banner img,#ban1 img {width:100%;}
+#banner{position:relative;}
+#banner button {position:absolute; top:50%; z-index: 999; width:35px;
+                height:35px; border-radius: 100%; background: rgba(0,0,0,0.4);
+                border:none!important; outline: none;transform: translateY(-50%);}
+            
+#banner button::before {font-family: "xeicon";color:#fff; font-size: 20px;}
+#banner button.slick-prev {left:50px; font-size: 0; 
+                           color: transparent!important;}
+#banner button.slick-prev:before {content:"\e93d";}
+#banner button.slick-next {right:50px;font-size:0; color:transparent!important;}
+#banner button.slick-next:before {content:"\e940";}
+#banner {width:100%;}
+
+.slick-dots {position:absolute;bottom:10px;left:50%;
+             transform:translateX(-50%);text-align:center;}
+#banner .slick-dots li{width:15px;height:15px;display:inline-block;
+                       margin-right:3px;} 
+
+#banner .slick-dots >li >button{font-size:0;color:#fff;
+               width: 3px; height: 5px; border:none;}
+#banner .slick-dots >li.slick-active button {background: #fff; color:#9849;}  
+
+
+#ban1 {margin-top: 50px;}
+
+
+
+        
+#footer {width: 100%; height: 310px; text-align: center;background:lightslategrey;
+    color:#fff;font-size: 0.4rem;margin-top: 50px; }
+
+.f_menu1 { text-align:center; padding-top:10px; padding-bottom:10px;}
+
+.f_menu1, .f_menu2 {font-size: 0.6rem;text-align: center;}
+
+.f_menu1 a {padding:20px; color:#fff;} 
+.f_menu2 a {padding:0px; color:#fff; padding-right: 40px;} 
+.f_menu2 img {width: 75px; position: absolute; padding-bottom:10px;}
+.footer_buttom {color:#fff; background:transparent; vertical-align:middle; font-family:Noto Sans KR; font-size:0.9em; border:0; font-weight:bold;}
+
+.f_line {width:100%; border: 1rem; color: dimgray; height: 0.5rem;}
+.f_menu3, .f_menu4 {text-align: left;} 
+.f_menu3, .f_menu4 {padding-left: 10px;}
+
+.f_menu3 {padding-top: 50px;}
+.f_number{font-size: 0.8rem;}
+.f_number2 {font-size: 0.99rem;padding-right: 300px;}
+.f_number3 {font-size: 0.6rem; color: black;}
+.f_name {font-size: 0.7rem;}
+
+
+.f_number4 {padding-top: 50px; text-align: left; padding-left: 10px;}
+.f_bottom {font-weight: 200; font-size: 0.65rem;color: black; }
+
+
+
+
+
+        
+
+        
+@media screen and (max-width:640px){
+    #main ul, #main1 ul, #main2 ul {flex-wrap:wrap;}
+    #main ul li, #main1 ul li, #main2 ul li {width:50%;padding-right:3px;line-height: 40px;}
+}
